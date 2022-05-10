@@ -1,0 +1,8 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.chartBox{
+  width: 1000px;
+}
