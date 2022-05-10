@@ -29,7 +29,7 @@
         labels: countries.map((country) => country.properties.name),
         datasets: [{
           label: 'Countries',
-         data: countries.map((country) => ({ feature: country, value: Math.random()}))
+         data: countries.map((country) => ({ feature: country, value: Math.random() * 10}))
         }]
       };
 
