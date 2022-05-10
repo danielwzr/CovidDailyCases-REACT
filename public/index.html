@@ -19,13 +19,7 @@
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="text/javascript" src="https://unpkg.com/chartjs-chart-geo@3.5.2/build/index.umd.min.js"></script>
- <script type="module" src="../src/csv.js">
-    console.log(getCSVData);
- </script>
-
   <script>
-
-
     const url = 'https://unpkg.com/world-atlas@2.0.2/countries-50m.json';
 
     fetch(url).then((r) => r.json()).then((datac) => {
@@ -35,7 +29,7 @@
         labels: countries.map((country) => country.properties.name),
         datasets: [{
           label: 'Countries',
-       //   data: countries.map((country) => ({ feature: country, value: 1}))
+         data: countries.map((country) => ({ feature: country, value: Math.random()}))
         }]
       };
 
