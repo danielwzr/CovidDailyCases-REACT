@@ -1,4 +1,4 @@
-## Simple test project with react and chartjs
+## Simple test project with React and chartjs (* the Covid numbers are not real)
 
 In the project directory, you can run:
 
