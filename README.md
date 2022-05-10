@@ -1,6 +1,4 @@
-## Initialaze script
-
-Simple test project using charjs and react.
+## Simple test project with react and chartjs
 
 In the project directory, you can run:
 
