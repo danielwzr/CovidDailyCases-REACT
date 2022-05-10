@@ -1,4 +1,8 @@
-import axios from "axios";
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = '';
+const supabaseKey = ''
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function getCSVData() {
   let input = await axios.get("http://localhost:4000").then( res => { return res.data });
@@ -12,5 +16,3 @@ async function getCSVData() {
   }, {});
   return result;
 }
-
-export default getCSVData;
